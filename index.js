@@ -6,3 +6,8 @@ var message = `${name} is ${height} inches tall`
 module.exports = {name, height, message}
 
 var index = require("../index.js")
+describe('Name', () => {
+    it('returns "Susan"', () => {
+      expect(index.name).toEqual('Susan')
+    })
+  })
